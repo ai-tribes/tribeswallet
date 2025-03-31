@@ -27,7 +27,7 @@ export default function Pitch() {
           <div className="flex justify-center mb-8">
             <div className="relative h-32 w-32">
               <Image
-                src="/tribes-wallet-logo.jpg"
+                src="/ai-tribes_logo_1.png"
                 alt="Tribes Wallet Logo"
                 layout="fill"
                 objectFit="contain"

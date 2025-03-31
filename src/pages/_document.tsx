@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/tribes-wallet-logo.svg" />
+        <link rel="apple-touch-icon" href="/ai-tribes_logo_1.png" />
         <meta name="theme-color" content="#000000" />
       </Head>
       <body>
