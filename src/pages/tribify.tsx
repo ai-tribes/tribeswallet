@@ -12,8 +12,8 @@ export default function TribifyHome() {
   return (
     <>
       <Head>
-        <title>Tribify.AI | AI-powered Social Media Tokenization Platform by AITRIBES.com</title>
-        <meta name="description" content="Tribify.AI - An AITRIBES.com product. Turn your social media presence into a tokenized community. Create token-gated communities with AI agents that represent your brand or persona." />
+        <title>Tribify.AI | AI-powered Social Media Tokenization Platform</title>
+        <meta name="description" content="Tribify.AI - Turn your social media presence into a tokenized community. Create token-gated communities with AI agents that represent your brand or persona." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/tribify-favicon.ico" />
       </Head>
@@ -23,10 +23,9 @@ export default function TribifyHome() {
           <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div className="flex lg:flex-1">
               <a href="https://aitribes.com" className="-m-1.5 p-1.5">
-                <span className="sr-only">Tribify.AI - An AITRIBES.com Product</span>
+                <span className="sr-only">Tribify.AI</span>
                 <div className="flex items-center">
                   <div className="flex flex-col">
-                    <span className="text-xs uppercase tracking-wider text-gray-400">An AITRIBES.com Product</span>
                     <span className="text-xl font-bold text-white">Tribify.AI</span>
                   </div>
                 </div>

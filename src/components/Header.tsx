@@ -24,7 +24,7 @@ export default function Header() {
             <div className="flex items-center">
               <Image src="/ai-tribes_logo_1.png" alt="Tribes Wallet Logo" width={50} height={50} priority className="mr-3" />
               <div className="flex flex-col">
-                <span className="text-xs uppercase tracking-wider text-gray-400">An AITRIBES.com Product</span>
+                <span className="text-xs uppercase tracking-wider text-gray-400"></span>
                 <span className="text-xl font-bold text-white">Tribes Wallet</span>
               </div>
             </div>
@@ -67,7 +67,7 @@ export default function Header() {
               <div className="flex items-center">
                 <Image src="/ai-tribes_logo_1.png" alt="Tribes Wallet Logo" width={50} height={50} priority className="mr-3" />
                 <div className="flex flex-col">
-                  <span className="text-xs uppercase tracking-wider text-gray-400">An AITRIBES.com Product</span>
+                  <span className="text-xs uppercase tracking-wider text-gray-400"></span>
                   <span className="text-xl font-bold text-white">Tribes Wallet</span>
                 </div>
               </div>
