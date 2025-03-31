@@ -1,6 +1,10 @@
 {
   "/_app": "pages/_app.js",
+  "/404": "pages/404.html",
+  "/download": "pages/download.html",
+  "/": "pages/index.html",
+  "/pitch": "pages/pitch.html",
+  "/tribify": "pages/tribify.html",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/_document": "pages/_document.js"
 }
