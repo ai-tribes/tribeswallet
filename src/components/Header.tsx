@@ -4,12 +4,11 @@ import Image from 'next/image';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
-  { name: 'Features', href: '#features' },
-  { name: 'How it works', href: '#how-it-works' },
-  { name: 'Governance', href: '#governance' },
-  { name: 'Browse Tribes', href: '/tribes' },
-  { name: 'FAQ', href: '#faq' },
-  { name: 'Pitch Deck', href: '/pitch' },
+  { name: 'Home', href: '/' },
+  { name: 'Tribes', href: '/tribes' },
+  { name: 'Features', href: '/#features' },
+  { name: 'Download', href: '/download' },
+  { name: 'FAQ', href: '/#faq' },
 ];
 
 export default function Header() {
