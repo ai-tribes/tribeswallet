@@ -9,9 +9,9 @@ export default function Pitch() {
   return (
     <div className="bg-black min-h-screen">
       <Head>
-        <title>Tribify.AI - Pitch Deck</title>
-        <meta name="description" content="Tribify.AI: The future of token-based communities with built-in messaging" />
-        <link rel="icon" href="/tribify-favicon.ico" />
+        <title>Tribes Wallet - Pitch Deck</title>
+        <meta name="description" content="Tribes Wallet: The future of token-based communities with built-in messaging" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
@@ -27,8 +27,8 @@ export default function Pitch() {
           <div className="flex justify-center mb-8">
             <div className="relative h-32 w-32">
               <Image
-                src="/tribify-favicon.ico"
-                alt="Tribify.AI Logo"
+                src="/tribes-wallet-logo.jpg"
+                alt="Tribes Wallet Logo"
                 layout="fill"
                 objectFit="contain"
               />
@@ -41,7 +41,7 @@ export default function Pitch() {
             Messaging platform where group chats are defined by token ownership
           </p>
           <div className="text-gray-400 mt-8">
-            <p className="uppercase tracking-wider">Pitch Deck 2023</p>
+            <p className="uppercase tracking-wider">Pitch Deck 2025</p>
           </div>
         </motion.section>
 
@@ -60,82 +60,82 @@ export default function Pitch() {
             
             <div className="space-y-8">
               <div className="bg-black rounded-lg p-8">
-                <h3 className="text-2xl font-bold text-white mb-4">Disconnected Token Communities</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Token Holders Can't Communicate</h3>
                 <p className="text-gray-300 mb-6">
-                  Today on Telegram and other apps, millions of users claim to belong to token communities, but there's no verification - anyone can join regardless of token ownership.
+                  Imagine becoming a shareholder in a company, but there are no shareholder meetings and no way to connect with other shareholders. This is the reality for token holders today.
                 </p>
                 <ul className="space-y-3 text-gray-400">
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                     </svg>
-                    <span>No verification that chat members actually hold the tokens they discuss</span>
+                    <span>No built-in communication channels for token holders</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                     </svg>
-                    <span>Group admins aren't necessarily major token holders</span>
+                    <span>Token ownership doesn't automatically connect you with your tribe</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                     </svg>
-                    <span>No direct link between ownership and communication rights</span>
+                    <span>Missing the networked benefits of being part of a token community</span>
                   </li>
                 </ul>
               </div>
               
               <div className="bg-black rounded-lg p-8">
-                <h3 className="text-2xl font-bold text-white mb-4">Messaging Tokens Is Impossible</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Coordination Without Communication</h3>
                 <p className="text-gray-300 mb-6">
-                  You can't directly message token addresses or communities based on token ownership, forcing reliance on external coordination tools.
+                  Token holders are expected to coordinate actions and make collective decisions, but have no direct way to communicate with each other.
                 </p>
                 <ul className="space-y-3 text-gray-400">
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                     </svg>
-                    <span>No way to message token holders without knowing their identities</span>
+                    <span>No direct messaging between token holders about shared interests</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                     </svg>
-                    <span>Community communications happen off-chain with no verification</span>
+                    <span>Reliance on third-party platforms that don't verify token ownership</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                     </svg>
-                    <span>Can't send funds or tokens with messaging in a unified experience</span>
+                    <span>Impossible to reach all token holders with important information</span>
                   </li>
                 </ul>
               </div>
               
               <div className="bg-black rounded-lg p-8">
-                <h3 className="text-2xl font-bold text-white mb-4">Lack of Community Control</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Unrealized Community Potential</h3>
                 <p className="text-gray-300 mb-6">
-                  Token communities have no direct control over their shared AI agents, governance, or content.
+                  The true value of tokens comes from the community and collective coordination, yet there's no infrastructure to unlock this potential.
                 </p>
                 <ul className="space-y-3 text-gray-400">
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                     </svg>
-                    <span>Community AIs controlled by centralized companies, not token holders</span>
+                    <span>Token communities exist in theory, but not in practice</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                     </svg>
-                    <span>No way for token holders to vote on community directions</span>
+                    <span>Token holders make decisions in isolation without community input</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                     </svg>
-                    <span>Disconnection between token ownership and community governance</span>
+                    <span>Missing the shareholder meeting equivalent for token communities</span>
                   </li>
                 </ul>
               </div>
@@ -165,26 +165,26 @@ export default function Pitch() {
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Token-Based Group Chats</h3>
                 <p className="text-gray-400 mb-6">
-                  A messaging platform where each cryptocurrency token creates a private group chat, accessible only to token holders.
+                  Automatic shareholder meetings for every token. Buy a token, instantly join its tribe chat and connect with fellow holders.
                 </p>
                 <ul className="text-left space-y-3 text-gray-400">
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Only token holders can access tribe chats</span>
+                    <span>Buy token = instantly join the tribe's chat</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Message verification through private key signing</span>
+                    <span>Direct communication with all fellow holders</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Like Telegram or Signal but for token holders</span>
+                    <span>Verification through blockchain ownership</span>
                   </li>
                 </ul>
               </div>
@@ -195,28 +195,28 @@ export default function Pitch() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">51% Governance Model</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">True Shareholder Dynamics</h3>
                 <p className="text-gray-400 mb-6">
-                  Majority token holders control their tribes, just like shareholders in a company, with power over moderation and community rules.
+                  Just like corporate shareholding, majority token holders (51%+) get governance control of their tribe – as it should be.
                 </p>
                 <ul className="text-left space-y-3 text-gray-400">
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>51% token holders set community rules</span>
+                    <span>Majority holders govern their communities</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Community voting on important decisions</span>
+                    <span>Voting weight proportional to holdings</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Transparent, token-based governance</span>
+                    <span>Real corporate governance for tokens</span>
                   </li>
                 </ul>
               </div>
@@ -227,28 +227,28 @@ export default function Pitch() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">AI Tribe Representatives</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Unlock Community Power</h3>
                 <p className="text-gray-400 mb-6">
-                  Each tribe has its own AI that serves as the public face, with behavior controlled by token holders through voting.
+                  Transform isolated token holdings into coordinated communities that can act together, increasing the value and utility of each token.
                 </p>
                 <ul className="text-left space-y-3 text-gray-400">
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Customizable AI for each token community</span>
+                    <span>Coordinated collective action</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Token holders vote on AI capabilities</span>
+                    <span>Information flows to all stakeholders</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>AI supports community building and moderation</span>
+                    <span>Community-driven value creation</span>
                   </li>
                 </ul>
               </div>
@@ -594,7 +594,7 @@ export default function Pitch() {
                     <div className="md:w-1/2 md:text-right mb-6 md:mb-0 md:pr-8">
                       <div className="bg-black rounded-lg p-6">
                         <h3 className="text-xl font-bold text-white mb-2">Q1 2024</h3>
-                        <h4 className="text-white mb-4">Phase 3: Tribify Platform</h4>
+                        <h4 className="text-white mb-4">Phase 3: Tribes Wallet Platform</h4>
                         <ul className="space-y-2 text-gray-400">
                           <li>• Launch basic AI tribal agents</li>
                           <li>• Implement on-chain content verification</li>
