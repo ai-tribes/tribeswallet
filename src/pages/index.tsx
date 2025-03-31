@@ -1,8 +1,10 @@
+import type { ReactElement } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import HowItWorks from '@/components/HowItWorks'
 import Features from '@/components/Features'
 import MemecoinsShowcase from '@/components/MemecoinsShowcase'
 import FAQ from '@/components/FAQ'
@@ -23,13 +25,20 @@ export default function Home() {
       
       <div className="min-h-screen">
         <Header />
-        <Hero />
-        <Features />
-        <MemecoinsShowcase />
-        <FAQ />
-        <CTASection />
+        <main>
+          <Hero />
+          <HowItWorks />
+          <Features />
+          <MemecoinsShowcase />
+          <FAQ />
+          <CTASection />
+        </main>
         <Footer />
       </div>
     </>
   )
+}
+
+Home.getLayout = function getLayout(page: ReactElement) {
+  return page
 } 
