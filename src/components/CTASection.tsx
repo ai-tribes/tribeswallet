@@ -1,111 +1,115 @@
-import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export default function CTASection() {
   return (
-    <div className="bg-black">
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <section className="py-16 bg-black">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
-          className="bg-gray-900 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
+          className="bg-gradient-to-r from-purple-900 to-indigo-900 rounded-2xl overflow-hidden shadow-xl"
         >
-          <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
-            <div className="lg:self-center">
-              <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-                <span className="block">Token-Based.</span>
-                <span className="block">Message Your Tribe.</span>
+          <div className="px-6 py-12 sm:px-12 sm:py-16 lg:flex lg:items-center lg:p-20">
+            <div className="lg:w-0 lg:flex-1">
+              <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                Own Tokens? Join Your Tribe Chat
               </h2>
-              <p className="mt-4 text-lg leading-6 text-gray-300">
-                Access to messaging is defined by token ownership. Create token-gated communities or join existing tribes. Bring your crypto community together in a messaging platform designed for token holders.
+              <p className="mt-4 max-w-3xl text-lg text-indigo-100">
+                Stop coordinating in Telegram chats filled with non-holders and bots. 
+                Join token-gated chats where only verified holders can participate. 
+                Connect, coordinate, and build value together.
               </p>
-              <motion.div 
-                className="mt-8 flex"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 0.3, duration: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <div className="inline-flex rounded-md shadow">
-                  <Link href="/download" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-gray-200">
-                    Get Early Access
-                  </Link>
-                </div>
-                <div className="ml-3 inline-flex">
-                  <Link href="/pitch" className="inline-flex items-center justify-center px-5 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-gray-800">
-                    View Pitch Deck
-                  </Link>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-          <div className="relative -mt-6 md:mt-0">
-            <motion.div 
-              className="relative h-full w-full flex items-center justify-center"
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <svg
-                className="absolute inset-0 h-full w-full"
-                viewBox="0 0 160 678"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M160 0v678H0V0h160z"
-                  fill="#111"
-                  fillRule="evenodd"
-                />
-              </svg>
               
-              <div className="relative text-center p-8">
-                <div className="text-5xl font-bold bg-gradient-to-r from-[#00E5FF] via-[#FF6B00] to-[#FF00A8] text-transparent bg-clip-text mb-6">Tribes Wallet</div>
-                <div className="text-xl text-gray-300 mb-10">Token-Based Messaging</div>
-                <div className="grid grid-cols-2 gap-6 mb-10">
-                  <div className="flex flex-col items-center">
-                    <div className="h-16 w-16 rounded-full bg-white flex items-center justify-center mb-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              <div className="mt-8 flex flex-wrap gap-4">
+                <div className="bg-black/30 backdrop-blur-sm rounded-lg p-4">
+                  <p className="text-white font-semibold">For Token Holders</p>
+                  <ul className="mt-2 space-y-2 text-sm text-indigo-100">
+                    <li className="flex items-center">
+                      <svg className="h-5 w-5 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                    </div>
-                    <div className="text-sm text-gray-300">Messaging</div>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <div className="h-16 w-16 rounded-full bg-white flex items-center justify-center mb-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      Connect with other holders instantly
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="h-5 w-5 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                    </div>
-                    <div className="text-sm text-gray-300">Tokens</div>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <div className="h-16 w-16 rounded-full bg-white flex items-center justify-center mb-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      Get real-time market intel from the community
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="h-5 w-5 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                    </div>
-                    <div className="text-sm text-gray-300">Communities</div>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <div className="h-16 w-16 rounded-full bg-white flex items-center justify-center mb-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                      </svg>
-                    </div>
-                    <div className="text-sm text-gray-300">AI Assistants</div>
-                  </div>
+                      Coordinate with your tribe for collective action
+                    </li>
+                  </ul>
                 </div>
-                <div className="text-sm text-gray-400">
-                  Only those who own the relevant tokens can access tribe messaging, communities, and token-specific AI assistants
+                
+                <div className="bg-black/30 backdrop-blur-sm rounded-lg p-4">
+                  <p className="text-white font-semibold">For Majority Holders (51%+)</p>
+                  <ul className="mt-2 space-y-2 text-sm text-indigo-100">
+                    <li className="flex items-center">
+                      <svg className="h-5 w-5 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      Take control of your token's governance
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="h-5 w-5 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      Deploy AI agents to manage your community
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="h-5 w-5 text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      Direct messaging to all token holders
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </motion.div>
+            </div>
+            <div className="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
+              <div className="bg-black/50 backdrop-blur-md rounded-lg p-6 sm:p-8">
+                <h3 className="text-2xl font-bold text-white mb-6">Join Your Token Tribe</h3>
+                <form className="space-y-4">
+                  <div>
+                    <label htmlFor="wallet" className="sr-only">Wallet Address</label>
+                    <input
+                      id="wallet"
+                      name="wallet"
+                      type="text"
+                      placeholder="Enter your wallet address"
+                      className="block w-full rounded-md border-0 bg-black/70 py-3 px-4 text-base text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    />
+                  </div>
+                  <div>
+                    <Link 
+                      href="/download"
+                      className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-gray-200"
+                    >
+                      Connect Wallet & Join
+                    </Link>
+                  </div>
+                </form>
+                <p className="mt-4 text-center text-sm text-indigo-100">
+                  Already have an account? <Link href="/login" className="font-medium text-white hover:text-indigo-200">Sign in</Link>
+                </p>
+                
+                <div className="mt-6 pt-6 border-t border-gray-700">
+                  <p className="text-sm text-center text-indigo-300">
+                    Supports Ethereum, Solana, and Polygon networks
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 } 

@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Features from '@/components/Features'
-import SuccessStories from '@/components/SuccessStories'
+import MemecoinsShowcase from '@/components/MemecoinsShowcase'
 import FAQ from '@/components/FAQ'
 import CTASection from '@/components/CTASection'
 import Footer from '@/components/Footer'
@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Tribes Wallet | Token-Based Messaging Platform by AITRIBES.com</title>
-        <meta name="description" content="Tribes Wallet - The secure messaging app with integrated cryptocurrency wallet. A product by AITRIBES.com combining messaging with token-based community governance." />
+        <title>Tribes Wallet | Token-Based Messaging Platform for Crypto Communities</title>
+        <meta name="description" content="Tribes Wallet - Token-gated messaging for cryptocurrency communities. Connect with other token holders and coordinate as a unified tribe." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/ai-tribes_logo_1.png" />
@@ -25,7 +25,7 @@ export default function Home() {
         <Header />
         <Hero />
         <Features />
-        <SuccessStories />
+        <MemecoinsShowcase />
         <FAQ />
         <CTASection />
         <Footer />
