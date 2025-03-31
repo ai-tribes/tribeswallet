@@ -7,6 +7,7 @@ const navigation = [
   { name: 'Features', href: '#features' },
   { name: 'How it works', href: '#how-it-works' },
   { name: 'Governance', href: '#governance' },
+  { name: 'Browse Tribes', href: '/tribes' },
   { name: 'FAQ', href: '#faq' },
   { name: 'Pitch Deck', href: '/pitch' },
 ];
