@@ -1,0 +1,727 @@
+import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import { motion } from 'framer-motion';
+
+export default function Pitch() {
+  return (
+    <div className="bg-black min-h-screen">
+      <Head>
+        <title>AI Tribes - Pitch Deck</title>
+        <meta name="description" content="AI Tribes: The future of tokenized communities with 51% majority governance" />
+      </Head>
+
+      <Header />
+
+      <main className="py-16">
+        {/* Cover Slide */}
+        <motion.section 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24 text-center"
+        >
+          <div className="flex justify-center mb-8">
+            <div className="relative h-32 w-32">
+              <Image
+                src="/images/tribes_logo.png"
+                alt="AI Tribes Logo"
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
+          </div>
+          <h1 className="text-5xl font-extrabold text-white mb-6">
+            AI Tribes
+          </h1>
+          <p className="text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
+            Redefining community governance through 51% majority token control
+          </p>
+          <div className="text-gray-400 mt-8">
+            <p className="uppercase tracking-wider">Pitch Deck 2023</p>
+          </div>
+        </motion.section>
+
+        {/* The Problem */}
+        <motion.section 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24"
+          id="problem"
+        >
+          <div className="bg-gray-900 rounded-lg p-8 lg:p-16">
+            <div className="text-white text-sm uppercase tracking-wider mb-4">01</div>
+            <h2 className="text-4xl font-bold text-white mb-8">The Problem</h2>
+            
+            <div className="space-y-8">
+              <div className="bg-black rounded-lg p-8">
+                <h3 className="text-2xl font-bold text-white mb-4">Governance Without Ownership</h3>
+                <p className="text-gray-300 mb-6">
+                  Traditional social platforms disconnect community influence from ownership, resulting in centralized control that doesn't represent stakeholder interests.
+                </p>
+                <ul className="space-y-3 text-gray-400">
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    <span>Community members have no ownership of their platforms</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    <span>Users generate value but receive no equity</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    <span>Arbitrary changes to platform rules without stakeholder input</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-black rounded-lg p-8">
+                <h3 className="text-2xl font-bold text-white mb-4">Token Communities Without Utility</h3>
+                <p className="text-gray-300 mb-6">
+                  Cryptocurrency tokens offer ownership but lack meaningful community functionality and governance mechanisms.
+                </p>
+                <ul className="space-y-3 text-gray-400">
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    <span>Token holders have no direct communication channels</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    <span>Governance voting is complex and has low participation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    <span>No direct link between token ownership and community influence</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-black rounded-lg p-8">
+                <h3 className="text-2xl font-bold text-white mb-4">AI Without Clear Ownership</h3>
+                <p className="text-gray-300 mb-6">
+                  As AI agents become more prevalent, the question of who controls them and their actions becomes increasingly important.
+                </p>
+                <ul className="space-y-3 text-gray-400">
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    <span>AI agents controlled by centralized entities</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    <span>No direct community control over AI behavior and policies</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    <span>Lack of transparency in how AI decisions are made</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* Our Solution */}
+        <motion.section 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24"
+          id="solution"
+        >
+          <div className="bg-gray-900 rounded-lg p-8 lg:p-16">
+            <div className="text-white text-sm uppercase tracking-wider mb-4">02</div>
+            <h2 className="text-4xl font-bold text-white mb-8">Our Solution</h2>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div className="bg-black rounded-lg p-8 flex flex-col items-center text-center">
+                <div className="bg-white rounded-full p-4 mb-6">
+                  <svg className="h-12 w-12 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">AI Tribes</h3>
+                <p className="text-gray-400 mb-6">
+                  A decentralized ecosystem where every token is a community with built-in governance, messaging, and AI representation.
+                </p>
+                <ul className="text-left space-y-3 text-gray-400">
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Automatic tribe creation with new tokens</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>51% token majority controls governance</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Token-gated messaging for all holders</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-black rounded-lg p-8 flex flex-col items-center text-center">
+                <div className="bg-white rounded-full p-4 mb-6">
+                  <svg className="h-12 w-12 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">Tribes Wallet</h3>
+                <p className="text-gray-400 mb-6">
+                  A multi-chain wallet that combines messaging, token management, and community governance in one seamless interface.
+                </p>
+                <ul className="text-left space-y-3 text-gray-400">
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>$Username cash handles for easy payments</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Multi-chain support for all major blockchains</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Swipe-to-invest discovery of new tribes</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-black rounded-lg p-8 flex flex-col items-center text-center">
+                <div className="bg-white rounded-full p-4 mb-6">
+                  <svg className="h-12 w-12 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">Tribify</h3>
+                <p className="text-gray-400 mb-6">
+                  A platform for deploying AI agents owned and controlled by token communities through direct governance.
+                </p>
+                <ul className="text-left space-y-3 text-gray-400">
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>AI agents controlled by tribe governance</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>On-chain verification of AI decisions</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-6 w-6 text-white mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Community-defined AI capabilities and limits</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="mt-12 text-center">
+              <h3 className="text-3xl font-bold text-white mb-6">51% Governance Model</h3>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Direct, transparent community control through simple majority token ownership - 
+                the way blockchain governance was always meant to be.
+              </p>
+            </div>
+          </div>
+        </motion.section>
+        
+        {/* Market Opportunity */}
+        <motion.section 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24"
+          id="market"
+        >
+          <div className="bg-gray-900 rounded-lg p-8 lg:p-16">
+            <div className="text-white text-sm uppercase tracking-wider mb-4">03</div>
+            <h2 className="text-4xl font-bold text-white mb-8">Market Opportunity</h2>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+              <div className="bg-black rounded-lg p-8">
+                <h3 className="text-2xl font-bold text-white mb-6">Growing Crypto User Base</h3>
+                <div className="flex items-center justify-center mb-8">
+                  <div className="text-6xl font-bold text-white">420M+</div>
+                </div>
+                <p className="text-gray-400 text-center">
+                  Cryptocurrency users worldwide, with adoption accelerating yearly
+                </p>
+              </div>
+              
+              <div className="bg-black rounded-lg p-8">
+                <h3 className="text-2xl font-bold text-white mb-6">Total Addressable Market</h3>
+                <div className="flex items-center justify-center mb-8">
+                  <div className="text-6xl font-bold text-white">$2.3T</div>
+                </div>
+                <p className="text-gray-400 text-center">
+                  Combined market cap of tokens that could benefit from tribal governance
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-black rounded-lg p-8 mb-12">
+              <h3 className="text-2xl font-bold text-white mb-6 text-center">Convergence of Key Trends</h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="text-center">
+                  <div className="bg-white h-1 w-full mb-4"></div>
+                  <h4 className="text-xl font-bold text-white mb-3">Web3 Social</h4>
+                  <p className="text-gray-400">
+                    $8.6B market growing at 43.2% CAGR as users seek ownership of their social experiences
+                  </p>
+                </div>
+                
+                <div className="text-center">
+                  <div className="bg-white h-1 w-full mb-4"></div>
+                  <h4 className="text-xl font-bold text-white mb-3">AI Agents</h4>
+                  <p className="text-gray-400">
+                    $7.2B market expected to grow to $51.8B by 2028 as AI agents become mainstream
+                  </p>
+                </div>
+                
+                <div className="text-center">
+                  <div className="bg-white h-1 w-full mb-4"></div>
+                  <h4 className="text-xl font-bold text-white mb-3">Token Communities</h4>
+                  <p className="text-gray-400">
+                    $14.3B in token communities seeking better governance and utility solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-black rounded-lg p-8">
+              <h3 className="text-2xl font-bold text-white mb-6 text-center">Competitor Landscape</h3>
+              
+              <div className="overflow-x-auto">
+                <table className="min-w-full divide-y divide-gray-800">
+                  <thead>
+                    <tr>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Feature</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">AI Tribes</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">DAOs</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Web3 Social</th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Traditional Wallets</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-800">
+                    <tr>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">51% Governance</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-green-400">✓</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-red-400">✗</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-red-400">✗</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-red-400">✗</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Token-gated Messaging</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-green-400">✓</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-red-400">✗</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-green-400">✓</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-red-400">✗</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">AI Agent Governance</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-green-400">✓</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-red-400">✗</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-red-400">✗</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-red-400">✗</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Multi-Chain Support</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-green-400">✓</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-red-400">✗</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-red-400">✗</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-green-400">✓</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Cash Handles</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-green-400">✓</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-red-400">✗</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-red-400">✗</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-red-400">✗</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </motion.section>
+        
+        {/* Business Model */}
+        <motion.section 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24"
+          id="business"
+        >
+          <div className="bg-gray-900 rounded-lg p-8 lg:p-16">
+            <div className="text-white text-sm uppercase tracking-wider mb-4">04</div>
+            <h2 className="text-4xl font-bold text-white mb-8">Business Model</h2>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+              <div className="bg-black rounded-lg p-8">
+                <div className="flex justify-center mb-6">
+                  <div className="bg-white rounded-full p-3">
+                    <svg className="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4 text-center">Transaction Fees</h3>
+                <p className="text-gray-400 text-center mb-6">
+                  1% fee on all token transactions and tribal governance actions
+                </p>
+                <div className="bg-gray-900 rounded p-4 text-center">
+                  <p className="text-xl font-bold text-white mb-1">$16.2M</p>
+                  <p className="text-sm text-gray-500">Projected Year 1 Revenue</p>
+                </div>
+              </div>
+              
+              <div className="bg-black rounded-lg p-8">
+                <div className="flex justify-center mb-6">
+                  <div className="bg-white rounded-full p-3">
+                    <svg className="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4 text-center">AI Agent Deployment</h3>
+                <p className="text-gray-400 text-center mb-6">
+                  Monthly subscription for advanced AI tribe agents and capabilities
+                </p>
+                <div className="bg-gray-900 rounded p-4 text-center">
+                  <p className="text-xl font-bold text-white mb-1">$8.7M</p>
+                  <p className="text-sm text-gray-500">Projected Year 1 Revenue</p>
+                </div>
+              </div>
+              
+              <div className="bg-black rounded-lg p-8">
+                <div className="flex justify-center mb-6">
+                  <div className="bg-white rounded-full p-3">
+                    <svg className="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4 text-center">Premium Features</h3>
+                <p className="text-gray-400 text-center mb-6">
+                  Advanced governance tools, analytics, and token distribution mechanisms
+                </p>
+                <div className="bg-gray-900 rounded p-4 text-center">
+                  <p className="text-xl font-bold text-white mb-1">$4.5M</p>
+                  <p className="text-sm text-gray-500">Projected Year 1 Revenue</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="bg-black rounded-lg p-8">
+                <h3 className="text-2xl font-bold text-white mb-6">Revenue Projections</h3>
+                <div className="space-y-6">
+                  <div>
+                    <div className="flex justify-between mb-2">
+                      <span className="text-gray-400">Year 1</span>
+                      <span className="text-white font-bold">$29.4M</span>
+                    </div>
+                    <div className="w-full bg-gray-800 rounded-full h-2.5">
+                      <div className="bg-white h-2.5 rounded-full" style={{ width: '20%' }}></div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div className="flex justify-between mb-2">
+                      <span className="text-gray-400">Year 2</span>
+                      <span className="text-white font-bold">$76.8M</span>
+                    </div>
+                    <div className="w-full bg-gray-800 rounded-full h-2.5">
+                      <div className="bg-white h-2.5 rounded-full" style={{ width: '45%' }}></div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div className="flex justify-between mb-2">
+                      <span className="text-gray-400">Year 3</span>
+                      <span className="text-white font-bold">$157.3M</span>
+                    </div>
+                    <div className="w-full bg-gray-800 rounded-full h-2.5">
+                      <div className="bg-white h-2.5 rounded-full" style={{ width: '75%' }}></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-black rounded-lg p-8">
+                <h3 className="text-2xl font-bold text-white mb-6">User Growth Targets</h3>
+                <div className="space-y-6">
+                  <div>
+                    <div className="flex justify-between mb-2">
+                      <span className="text-gray-400">Year 1</span>
+                      <span className="text-white font-bold">1.2M Users</span>
+                    </div>
+                    <div className="w-full bg-gray-800 rounded-full h-2.5">
+                      <div className="bg-white h-2.5 rounded-full" style={{ width: '15%' }}></div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div className="flex justify-between mb-2">
+                      <span className="text-gray-400">Year 2</span>
+                      <span className="text-white font-bold">4.8M Users</span>
+                    </div>
+                    <div className="w-full bg-gray-800 rounded-full h-2.5">
+                      <div className="bg-white h-2.5 rounded-full" style={{ width: '40%' }}></div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div className="flex justify-between mb-2">
+                      <span className="text-gray-400">Year 3</span>
+                      <span className="text-white font-bold">12.5M Users</span>
+                    </div>
+                    <div className="w-full bg-gray-800 rounded-full h-2.5">
+                      <div className="bg-white h-2.5 rounded-full" style={{ width: '80%' }}></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* Product Roadmap */}
+        <motion.section 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24"
+          id="roadmap"
+        >
+          <div className="bg-gray-900 rounded-lg p-8 lg:p-16">
+            <div className="text-white text-sm uppercase tracking-wider mb-4">05</div>
+            <h2 className="text-4xl font-bold text-white mb-8">Product Roadmap</h2>
+            
+            <div className="relative">
+              {/* Vertical timeline line */}
+              <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-white"></div>
+              
+              <div className="space-y-12">
+                <div className="relative">
+                  <div className="md:flex items-center md:space-x-8">
+                    <div className="md:w-1/2 md:text-right mb-6 md:mb-0 md:pr-8">
+                      <div className="bg-black rounded-lg p-6">
+                        <h3 className="text-xl font-bold text-white mb-2">Q3 2023</h3>
+                        <h4 className="text-white mb-4">Phase 1: Foundation</h4>
+                        <ul className="space-y-2 text-gray-400">
+                          <li>• Launch Tribes Wallet beta with basic token management</li>
+                          <li>• Implement cash handles ($username) system</li>
+                          <li>• Establish basic tribal chat functionality</li>
+                          <li>• Release MVP on Ethereum mainnet</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
+                      <div className="h-8 w-8 rounded-full bg-white"></div>
+                    </div>
+                    <div className="md:w-1/2 md:pl-8"></div>
+                  </div>
+                </div>
+                
+                <div className="relative">
+                  <div className="md:flex items-center md:space-x-8">
+                    <div className="md:w-1/2 md:pr-8"></div>
+                    <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
+                      <div className="h-8 w-8 rounded-full bg-white"></div>
+                    </div>
+                    <div className="md:w-1/2 md:pl-8 mb-6 md:mb-0">
+                      <div className="bg-black rounded-lg p-6">
+                        <h3 className="text-xl font-bold text-white mb-2">Q4 2023</h3>
+                        <h4 className="text-white mb-4">Phase 2: 51% Governance</h4>
+                        <ul className="space-y-2 text-gray-400">
+                          <li>• Implement full 51% governance mechanics</li>
+                          <li>• Add multi-chain support (Solana, Polygon)</li>
+                          <li>• Enhance token-gated messaging features</li>
+                          <li>• Release mobile app for iOS and Android</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="relative">
+                  <div className="md:flex items-center md:space-x-8">
+                    <div className="md:w-1/2 md:text-right mb-6 md:mb-0 md:pr-8">
+                      <div className="bg-black rounded-lg p-6">
+                        <h3 className="text-xl font-bold text-white mb-2">Q1 2024</h3>
+                        <h4 className="text-white mb-4">Phase 3: Tribify Platform</h4>
+                        <ul className="space-y-2 text-gray-400">
+                          <li>• Launch basic AI tribal agents</li>
+                          <li>• Implement on-chain content verification</li>
+                          <li>• Release swipe-to-invest discovery feature</li>
+                          <li>• Expand to additional blockchains</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
+                      <div className="h-8 w-8 rounded-full bg-white"></div>
+                    </div>
+                    <div className="md:w-1/2 md:pl-8"></div>
+                  </div>
+                </div>
+                
+                <div className="relative">
+                  <div className="md:flex items-center md:space-x-8">
+                    <div className="md:w-1/2 md:pr-8"></div>
+                    <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
+                      <div className="h-8 w-8 rounded-full bg-white"></div>
+                    </div>
+                    <div className="md:w-1/2 md:pl-8 mb-6 md:mb-0">
+                      <div className="bg-black rounded-lg p-6">
+                        <h3 className="text-xl font-bold text-white mb-2">Q2-Q4 2024</h3>
+                        <h4 className="text-white mb-4">Phase 4: Ecosystem Expansion</h4>
+                        <ul className="space-y-2 text-gray-400">
+                          <li>• Advanced AI tribal agent capabilities</li>
+                          <li>• Developer API for third-party integrations</li>
+                          <li>• Enterprise solutions for existing token communities</li>
+                          <li>• Cross-chain tribal governance solutions</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* Team & Investors */}
+        <motion.section 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24"
+          id="team"
+        >
+          <div className="bg-gray-900 rounded-lg p-8 lg:p-16">
+            <div className="text-white text-sm uppercase tracking-wider mb-4">06</div>
+            <h2 className="text-4xl font-bold text-white mb-8">Team & Investors</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+              {/* Team placeholders - replace with actual team information */}
+              <div className="bg-black rounded-lg p-6 text-center">
+                <div className="h-32 w-32 bg-white rounded-full mx-auto mb-4"></div>
+                <h3 className="text-xl font-bold text-white">Jane Smith</h3>
+                <p className="text-gray-400 mb-2">CEO & Founder</p>
+                <p className="text-sm text-gray-500">Former VP at Coinbase, 10+ years in blockchain and community building</p>
+              </div>
+              
+              <div className="bg-black rounded-lg p-6 text-center">
+                <div className="h-32 w-32 bg-white rounded-full mx-auto mb-4"></div>
+                <h3 className="text-xl font-bold text-white">David Johnson</h3>
+                <p className="text-gray-400 mb-2">CTO</p>
+                <p className="text-sm text-gray-500">Ex-Google AI, built multiple successful DeFi platforms</p>
+              </div>
+              
+              <div className="bg-black rounded-lg p-6 text-center">
+                <div className="h-32 w-32 bg-white rounded-full mx-auto mb-4"></div>
+                <h3 className="text-xl font-bold text-white">Sarah Chen</h3>
+                <p className="text-gray-400 mb-2">Head of Product</p>
+                <p className="text-sm text-gray-500">Previously led product at MetaMask, 8+ years in crypto UX</p>
+              </div>
+            </div>
+            
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">Backed By</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="bg-black rounded-lg p-4 flex items-center justify-center h-20">
+                <div className="text-white font-bold">VC Fund 1</div>
+              </div>
+              <div className="bg-black rounded-lg p-4 flex items-center justify-center h-20">
+                <div className="text-white font-bold">VC Fund 2</div>
+              </div>
+              <div className="bg-black rounded-lg p-4 flex items-center justify-center h-20">
+                <div className="text-white font-bold">VC Fund 3</div>
+              </div>
+              <div className="bg-black rounded-lg p-4 flex items-center justify-center h-20">
+                <div className="text-white font-bold">VC Fund 4</div>
+              </div>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* Call to Action */}
+        <motion.section 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24"
+          id="cta"
+        >
+          <div className="bg-black rounded-lg p-8 lg:p-16 text-center">
+            <h2 className="text-4xl font-extrabold text-white mb-8">Join the Tribal Revolution</h2>
+            <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
+              Be among the first to experience true community governance with AI Tribes. 
+              Create your tribe, establish your governance, and deploy your AI agents.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+              <Link href="/download" className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-gray-200">
+                Download Tribes Wallet
+              </Link>
+              <Link href="#features" className="inline-flex items-center justify-center px-8 py-4 border border-white text-base font-medium rounded-md text-white hover:bg-gray-800">
+                Learn More
+              </Link>
+            </div>
+            <div className="mt-12">
+              <p className="text-gray-400">
+                Contact us: <span className="text-white">partnerships@aitribes.com</span>
+              </p>
+            </div>
+          </div>
+        </motion.section>
+      </main>
+      
+      <Footer />
+    </div>
+  );
+} 
