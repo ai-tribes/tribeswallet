@@ -21,7 +21,7 @@ export default function Header() {
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Tribes Wallet - AITRIBES.com</span>
             <div className="flex items-center">
-              <Image src="/tribify-favicon.ico" alt="Tribes Wallet Logo" width={40} height={40} priority className="mr-3" />
+              <Image src="/tribes-wallet-logo.svg" alt="Tribes Wallet Logo" width={50} height={50} priority className="mr-3" />
               <div className="flex flex-col">
                 <span className="text-xs uppercase tracking-wider text-gray-400">An AITRIBES.com Product</span>
                 <span className="text-xl font-bold text-white">Tribes Wallet</span>
@@ -64,7 +64,7 @@ export default function Header() {
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Tribes Wallet - AITRIBES.com</span>
               <div className="flex items-center">
-                <Image src="/tribify-favicon.ico" alt="Tribes Wallet Logo" width={40} height={40} priority className="mr-3" />
+                <Image src="/tribes-wallet-logo.svg" alt="Tribes Wallet Logo" width={50} height={50} priority className="mr-3" />
                 <div className="flex flex-col">
                   <span className="text-xs uppercase tracking-wider text-gray-400">An AITRIBES.com Product</span>
                   <span className="text-xl font-bold text-white">Tribes Wallet</span>

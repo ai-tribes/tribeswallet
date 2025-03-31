@@ -16,7 +16,9 @@ export default function Home() {
         <title>Tribes Wallet | Token-Based Messaging Platform by AITRIBES.com</title>
         <meta name="description" content="Tribes Wallet - The secure messaging app with integrated cryptocurrency wallet. A product by AITRIBES.com combining messaging with token-based community governance." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/tribify-favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/tribes-wallet-logo.svg" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       
       <div className="min-h-screen">

@@ -1,0 +1,16 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Central circle -->
+  <circle cx="250" cy="250" r="125" fill="#f5f5f5" opacity="0.9"/>
+  
+  <!-- Moon/crescent shape -->
+  <path d="M250 175 Q300 225 250 275 Q200 225 250 175Z" fill="white"/>
+  
+  <!-- Bottom arrow/shape -->
+  <path d="M250 275 L225 325 L250 350 L275 325 L250 275Z" fill="white"/>
+  
+  <!-- Outer flame-like curves -->
+  <path d="M150 250 Q200 100 250 150 Q300 100 350 250 Q325 350 250 400 Q175 350 150 250Z" fill="#f5f5f5" opacity="0.6" stroke="white" stroke-width="2"/>
+  
+  <!-- Additional outer curves -->
+  <path d="M125 250 Q175 50 250 125 Q325 50 375 250 Q350 400 250 450 Q150 400 125 250Z" fill="#f5f5f5" opacity="0.4" stroke="white" stroke-width="1"/>
+</svg> 
